@@ -60,11 +60,7 @@ my $EU_READELF = "eu-readelf";
 my $EU_READELF_L = $LOCALE." ".$EU_READELF;
 my $OBJDUMP = "objdump";
 my $CTAGS = "ctags";
-
-if ( $ENV{"CTAGS"} eq "") {
-    my $CTAGS = $ENV{"CATGS"); 
-}
-
+my $CTAGS = $ENV{"CTAGS"} ? $ENV{"CTAGS"} : "ctags";
 my $EXUBERANT_CTAGS = 0;
 my $GPP = "g++";
 
